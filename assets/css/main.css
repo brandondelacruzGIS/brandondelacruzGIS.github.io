@@ -644,7 +644,7 @@ input, select, textarea {
 		position: relative;
 	}
 
-		.image:before {
+		/* .image:before {
 			pointer-events: none;
 			background-image: url("../../images/overlay.png");
 			background-color: rgba(19, 21, 25, 0.5);
@@ -657,7 +657,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			width: 100%;
-		}
+		} */
 
 		.image img {
 			border-radius: 4px;
@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1155,7 +1158,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/bg2.jpeg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1361,9 +1364,10 @@ input, select, textarea {
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
+					font-size: 0.71rem;
 					border-bottom: 0;
 				}
+/* hello world, aidamana helped with this, and kira was here too  */
 
 					#header nav ul li a:hover {
 						background-color: rgba(255, 255, 255, 0.075);
@@ -1656,3 +1660,24 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+		
+		  
+		  .wrapper {
+			display: grid;
+			grid-template-columns: 300px 300px 300px;
+			grid-gap: 10px;
+			/* background-color: #fff; */
+			color: #444;
+		  }
+		  
+		  .box {
+			background-color: #444;
+			color: #fff;
+			border-radius: 5px;
+			padding: 20px;
+			font-size: 150%;
+		  }
+
+
+		  
