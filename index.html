@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
+	Based on Dimension by HTML5 UP (html5up.net | @ajlkn)
+	Portfolio grid powered by Multiverse / jquery.poptrox
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 	</head>
 	<body class="is-preload">
 
@@ -19,20 +20,18 @@
 
 				<!-- Header -->
 					<header id="header">
-						
 						<div class="content">
 							<div class="inner">
 								<h1>brandondelacruzGIS</h1>
-								<p>Geospatial and Environmental Scientist <br>versed in Data Analysis and Visualization<br/> </p> 
+								<p>Geospatial and Environmental Scientist <br>versed in Data Analysis and Visualization</p>
 							</div>
 						</div>
 						<nav>
 							<ul>
 								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Portfolio</a></li>
+								<li><a href="javascript:void(0)" id="portfolio-nav-link">Portfolio</a></li>
 								<li><a href="#about">Resume</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<li><a href="#contact">Connect</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -40,479 +39,532 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
+						<!-- ========================
+						     INTRO
+						     ======================== -->
+						<article id="intro">
+							<h2 class="major">Intro</h2>
+							<img src="images/portrait.jpeg" alt="" width="220" height="auto" style="float:left; margin:0 1.5em 1em 0; border-radius:4px;">
+							<p>Welcome, traveler! Thank you for stopping by. My name is Brandon Dela Cruz. I am an inherently curious and optimistic person fascinated by the world we live in. I graduated from the University of Hawaii at Manoa's School of Ocean and Earth Science and Technology with a Bachelors of Science in Global Environmental Science and a certificate in Geospatial Information Sciences.</p>
+							<p>During my academic journey, I collaborated with GIS professionals on diverse projects. I worked with the City and County of Honolulu Storm Water Quality Division, employing ESRI products for visualizing nutrient concentrations in Oahu's Eastern watershed and creating a StoryMap for public outreach. Additionally, I contributed to a NASA-funded Environmental Justice project at UHM, involving data management and mining. At AECOM, I provided technical support to Engineers and Planners using ArcGIS products, generating field maps from converted CAD files and State Office of Planning data. Lastly, for my GES thesis, I applied my technical skills in Python and QGIS to analyze <i>E. coli</i> spatiotemporal variability in an urban wetland. These experiences have equipped me with a strong foundation in GIS and Data Analysis, ready to contribute to meaningful projects in the field.</p>
+							<p>Currently I am employed with Element Environmental as an Environmental Scientist. Part of my role includes creating field maps and survey reports from government, federal, and field efforts data to provide various reports in an array of formats including AutoCAD Civil 3D.</p>
+							<p>Software skills: ESRI suite (Desktop and Pro), QGIS, AutoCAD, Python, Agisoft Metashape</p>
+							<div style="clear:both;"></div>
+						</article>
 
-								<p>
-								<img src="images/portrait.jpeg" alt="" width="250" height="auto">
-								<!-- <span class="image main"><img src="images/portrait.jpeg" alt="" width="200" height="auto"/></span> -->
-							    </p>
-								<p>Welcome, traveler! Thank you for stopping by. My name is Brandon Dela Cruz. I am an inherentely curious and optimistic person fascinated by the world we live in. I graduated from the University of Hawaii at Manoa (UHM) with a Bachelors of Science in Global Environmental Science (GES) and a certificate in Geospatial Information Sciences (GIS)</a>.</p>
-								<p>During my academic journey, I collaborated with GIS professionals on diverse projects. I worked with the City and County of Honolulu Storm Water Quality Division, employing ESRI products for visualizing nutrient concentrations in Oahu's Eastern watershed and creating a StoryMap for public outreach. Additionally, I contributed to a NASA-funded Environmental Justice project at UHM, involving data management and mining. At AECOM, I provided technical support to Engineers and Planners using ArcGIS products, generating field maps from converted CAD files and State Office of Planning data. Lastly, for my GES thesis, I applied my tecnhical skills in Python and QGIS to analyze <i>E. coli</i> spatiotemporal variability in an urban wetland. These experiences have equipped me with a strong foundation in GIS and Data Analysis, ready to contribute to meaningful projects in the field.</p>
-								<p>Currently I am employed with Element Environmental as an Environmental Scientist. Part of my role includes working creating field maps and survey reports from goverment, federal, and field efforts data to provide various reports in an array of formats including AutoCAD Civil 3D.</p>
-								<p>Software skills: ESRI suite (Desktop and Pro), QGIS, AutoCAD, Python, Agisoft Metashape</p>
-							</article>
+						<!-- ========================
+						     RESUME
+						     ======================== -->
+						<!-- Hidden work article keeps Dimension JS happy -->
+						<article id="work"></article>
 
-						<!-- Portfolio -->
-							<!-- <div id="main">
-								<article class="thumb">
-									<a href="images2/fulls/01.jpg" class="image"><img src="images2/thumbs/01.jpg" alt="" /></a>
-									<h2>Magna feugiat lorem</h2>
-									<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-								</article>
-								<article class="thumb">
-									<a href="images2/fulls/02.jpg" class="image"><img src="images2/thumbs/02.jpg" alt="" /></a>
-									<h2>Nisl adipiscing</h2>
-									<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-								</article>
-								<article class="thumb">
-									<a href="images2/fulls/03.jpg" class="image"><img src="images2/thumbs/03.jpg" alt="" /></a>
-									<h2>Tempus aliquam veroeros</h2>
-									<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-								</article>
-							</div> -->
-							<article id="work">
-								<h2 class="major">Portfolio</h2>
-								<div class="wrapper">
-								
-									
-									<!--<div><span class="image main"><img src="images/p1.png" alt="" /></span>
-										<p><Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-										<p>whore</p></div>
-									<div class="box b">B</div>
-									<div class="box c">C</div>
-									<div class="box d">D</div>
-									<div class="box e">E</div>
-									<div class="box f">F</div>--> 
-								  </div>
+						<article id="about">
+							<h2 class="major">Resume</h2>
+							<span class="image main"><img src="images/resume1.jpeg" alt="" /></span>
+							<span class="image main"><img src="images/resume2.jpeg" alt="" /></span>
+						</article>
 
-								
-								<!-- ORIGNAL TEMPLATE
-								<span class="image main"><img src="portfolio/SumidaMap.png" alt="" /></span>
-								<p><Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>DESCRIPTION<br>
-								-->
-						
-								<span class="image main"><img src="portfolio/SumidaMap.png" alt="" /> 
-								Field map of study area and specified sample locations to determine the potential spatial relations of sewer mains proximity to wetland. <br>
-								<b>ArcGIS Pro</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/Sumidazscore.png" alt="" />
-								Calculated Z-Score(log10(MPN+1)) for <i>E. coli</i> across the project site. The collected data points were used to create an Inverse Distance Weighted (IDW) interpolated surface.<br>
-								<b>QGIS</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO490practicum.png" alt="" />
-								Storm drain delination to determine outflow locations that could benefit through implementations of Best Management Practice (BMPs) in the Palolo, HI area.<br>
-								<b>ArcGIS Pro, Microsoft Power BI, and Trimble Cityworks</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO472final.png" alt="" />
-								Historic Hawaiian Loʻi patch mapped out using a DJI Mavric Pro camera at various heights to avoid collisions, then stiched together using Agisoft software.<br>
-								<b>Agisoft Metashape Pro</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO370lab1.png" alt="" />
-								3D model of Varney Circle fountain on the University of Hawaiʻi at Mānoa campus. 23 images captured to create the 3D rendered model.<br>
-								<b>Agisoft Metashape Pro</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/ERTH461etna.png" alt="" />
-								Efflusion flow rates at various speeds mapped over Mount Etna, Italy DEM to determine Area of Potential Effect (APE).<br>
-								<b>ArcMap</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/ERTH461furumoto.png" alt="" />
-								The 1975 Furumoto data converted to shapefiles overlaid with resistivity minimum zones, thermal vents, the Puna geothermal ventures, and Leilani flows to observed the intersection areas of the geothermal processes over derived DEM.<br>
-								<b>ArcMap</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/ERTH461maui.png" alt="" />
-								Maui Volcano, Haleakalā, APE for lava flows in relation to roadway infrastructure surrounding the volcano over derived DEM.<br>
-								<b>ArcMap</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/ERTH461wawamalu.png" alt="" />
-								Wawamalu, commonly known as Sandy's Beach, mapped perimeter of the 2022 burn scar using Garmin eTrex 32x GPS Handheld. Data was imported to Esri's ArcMap to total area with 10 meter contour intervals. <br>
-								<b>ArcMap</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO471final.png" alt="" />
-								Contour intervals (0.1 meters) generated using LiDAR data to establish unobserved slopes across study area that could impact water flow.<br>
-								<b>FugroViewer</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO471lab11.png" alt="" />
-								Dune migration patterns mapped from LiDAR data. <br>
-								<b>ArcMap</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO471lab10.png" alt="" />
-								<span class="image main"><img src="portfolio/GEO471lab102.png" alt="" />
-								Oridinary Least Square (OLS) regression equations using variables of count, area, and volume of buildings. Values of estimated total population are compared with census data to calculate the accuracy of population estimation.<br>
-								<b>ArcMap</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO471lab9.png" alt="" />
-								Disturbances in the Everglades National Park (ENP), Florida mapped from LiDAR data and processed in ArcGIS to identify biological changes from hurricanes and lighting strokes to mangrove forests.<br>
-								<b>ArcMap</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO471lab8off.png" alt="" />
-								Leaf off
-								<span class="image main"><img src="portfolio/GEO471lab8on.png" alt="" />
-								Leaf on<br>
-								Canopy height models for forests during different seasons to estimate forest inventory attributes.<br>
-								<b>ArcMap</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO471lab7.png" alt="" />
-								Organizing LiDAR data in a mosaic dataset.<br>
-								<b>ArcMap</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO471lab6.png" alt="" />
-								Managing LiDAR data using Terrain dataset. Terrain to Raster; Symbology -> Graphic View off -> Color ramp Elevation #1 -> Basemap Imagery; Slope (3D Analyst) -> Output measurement PERCENT_RISE. [Derive slope surface]<br>
-								<b>ArcMap</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO471lab5.png" alt="" />
-								Visuaization of Digital Height Model (DHM) in ArcScene. DHM was obtained from the following calculation [Con("DSM" < "DEM","DEM","DSM")] derived from LiDAR data.<br>
-								<b>ArcMap</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO471lab4.png" alt="" />
-								Reclassification of LiDAR ground return points.<br>
-								<b>ArcMap</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO471lab3.png" alt="" />
-								Analyzing changes of ground soil after digging.<br>
-								<b>CloudCompare</b>
-								</span>
-
-								<span class="image main"><img src="portfolio/GEO471lab2.png" alt="" />
-								Tree point cloud rendered with "Return Number".<br>
-								<b>FugroViewer</b>
-								</span>
-								
-								<span class="image main"><img src="portfolio/GEO471lab1.png" alt="" />
-								Editing class codes of LiDAR data.<br>
-								<b>ArcMap</b>
-								</span>
-							<!--END-->
-
-							</article>
-
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">Resume</h2>
-								<span class="image main"><img src="images/resume1.jpeg" alt="" /></span>
-								<span class="image main"><img src="images/resume2.jpeg" alt="" /></span>
-							</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-
-								<p>Thank you for visiting. If you have any questions or would like to chat about geospatial projects, happy to connect via LinkedIn or email. Safe travels!</p>
-								
-								
-								<p>Brandon Dela Cruz<br>
-								Environmental Scientist & Travel Enthusiast<br>
-								bnkdc@hawaii.edu - Honolulu, HI</p>
-
-								<!-- <form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								 </form> -->
-								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/brandon-dela-cruz-285a031aa/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/brandondelacruzGIS" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
-
-						<!-- Elements -->
-
-						
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0; -->
-										
-									
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
+						<!-- ========================
+						     CONTACT
+						     ======================== -->
+						<article id="contact">
+							<h2 class="major">Connect</h2>
+							<p>Thank you for visiting. If you have any questions or would like to chat about geospatial projects, happy to connect via LinkedIn or email. Safe travels!</p>
+							<p>Brandon Dela Cruz<br>
+							Environmental Scientist &amp; Travel Enthusiast<br>
+							bnkdc@hawaii.edu — Honolulu, HI</p>
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/brandon-dela-cruz-285a031aa/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/brandondelacruzGIS" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</article>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<!--<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>-->
+						<!-- intentionally left minimal -->
 					</footer>
+
 			</div>
 
 		<!-- BG -->
 			<div id="bg"><img src="images/bg.jpg" alt=""></div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- =============================================
+		     SCRIPTS
+		     Load order matters:
+		     1. jQuery (required by poptrox)
+		     2. poptrox plugin (the lightbox engine)
+		     3. Dimension theme scripts
+		     4. Your custom poptrox initializer (Step 3)
+		     ============================================= -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- Step 3: Initialize Poptrox when the Portfolio nav link is clicked.
+		     Waiting until click avoids a race condition with Dimension's
+		     panel animation, which can cause the grid to measure at zero height. -->
+		<script>
+			(function() {
+				var initialized = false;
+
+				function initPoptrox() {
+					if (initialized) return;
+					initialized = true;
+					$('#portfolio-grid').poptrox({
+						caption: function($a) {
+							var title = $a.siblings('h2').text();
+							var desc  = $a.siblings('p').text();
+							return '<strong>' + title + '</strong><br>' + desc;
+						},
+						overlayColor:            '#1b1f22',
+						overlayOpacity:          0.85,
+						popupCloserText:         '&#x2715;',
+						popupLoaderText:         '',
+						selector:                'article.thumb a.grid-thumb',
+						usePopupCaption:         true,
+						usePopupDefaultStyling:  false,
+						usePopupEasyClose:       true,
+						usePopupNav:             true,
+						windowMargin:            50
+					});
+				}
+
+				// Fire when the Portfolio nav link is clicked
+				$(document).on('click', 'a[href="#work"]', function() {
+					setTimeout(initPoptrox, 400); // wait for Dimension's panel transition
+				});
+			})();
+		</script>
+
+		<!-- =============================================
+		     PORTFOLIO FULLSCREEN OVERLAY
+		     Lives outside Dimension's panel system entirely.
+		     Triggered by #portfolio-nav-link click.
+		     ============================================= -->
+		<div id="portfolio-overlay" style="
+			display: none;
+			position: fixed;
+			top: 0; left: 0;
+			width: 100vw; height: 100vh;
+			background: rgba(27, 31, 34, 0.85);
+			-webkit-backdrop-filter: blur(2px);
+			backdrop-filter: blur(2px);
+			z-index: 10000;
+			overflow-y: auto;
+			padding: 4em 2em 2em;
+			box-sizing: border-box;
+		">
+			<!-- Close button -->
+			<div id="portfolio-overlay-close" style="
+				position: fixed;
+				top: 1em; right: 1.5em;
+				color: #fff;
+				font-size: 1.5em;
+				cursor: pointer;
+				z-index: 10001;
+				opacity: 0.7;
+			">&#x2715;</div>
+
+			<!-- Grid -->
+			<div id="portfolio-grid" style="
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+				gap: 0.6em;
+				width: 100%;
+				max-width: 1200px;
+				margin: 0 auto;
+			">
+
+				<article class="thumb">
+					<a href="portfolio/SumidaMap.png" class="grid-thumb"><img src="portfolio/SumidaMap.png" alt="Sumida Wetland Field Map" /></a>
+					<span class="label">Sumida Wetland Field Map</span>
+					<h2>Sumida Wetland Field Map</h2>
+					<p>Field map of study area and specified sample locations to determine the potential spatial relations of sewer mains proximity to wetland. | ArcGIS Pro</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/Sumidazscore.png" class="grid-thumb"><img src="portfolio/Sumidazscore.png" alt="E. coli Z-Score Analysis" /></a>
+					<span class="label">E. coli Z-Score Analysis</span>
+					<h2>E. coli Z-Score Analysis</h2>
+					<p>Calculated Z-Score (log10(MPN+1)) for E. coli across the project site. Collected data points were used to create an Inverse Distance Weighted (IDW) interpolated surface. | QGIS</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO490practicum.png" class="grid-thumb"><img src="portfolio/GEO490practicum.png" alt="Storm Drain Delineation" /></a>
+					<span class="label">Storm Drain Delineation</span>
+					<h2>Storm Drain Delineation — Palolo, HI</h2>
+					<p>Storm drain delineation to determine outflow locations that could benefit through implementations of Best Management Practices (BMPs) in the Palolo, HI area. | ArcGIS Pro, Microsoft Power BI, Trimble Cityworks</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO472final.png" class="grid-thumb"><img src="portfolio/GEO472final.png" alt="Historic Hawaiian Lo'i Patch" /></a>
+					<span class="label">Historic Hawaiian Lo'i Patch</span>
+					<h2>Historic Hawaiian Loʻi Patch</h2>
+					<p>Historic Hawaiian Loʻi patch mapped using a DJI Mavic Pro camera at various heights to avoid collisions, then stitched together using Agisoft software. | Agisoft Metashape Pro</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO370lab1.png" class="grid-thumb"><img src="portfolio/GEO370lab1.png" alt="Varney Circle 3D Model" /></a>
+					<span class="label">Varney Circle 3D Model</span>
+					<h2>Varney Circle Fountain — 3D Model</h2>
+					<p>3D model of Varney Circle fountain on the University of Hawaiʻi at Mānoa campus. 23 images captured to create the 3D rendered model. | Agisoft Metashape Pro</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/ERTH461etna.png" class="grid-thumb"><img src="portfolio/ERTH461etna.png" alt="Mount Etna Effusion Flow" /></a>
+					<span class="label">Mount Etna Effusion Flow</span>
+					<h2>Mount Etna — Effusion Flow Rates</h2>
+					<p>Effusion flow rates at various speeds mapped over Mount Etna, Italy DEM to determine Area of Potential Effect (APE). | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/ERTH461furumoto.png" class="grid-thumb"><img src="portfolio/ERTH461furumoto.png" alt="Furumoto Geothermal Data" /></a>
+					<span class="label">Furumoto Geothermal Data</span>
+					<h2>1975 Furumoto Geothermal Analysis</h2>
+					<p>The 1975 Furumoto data converted to shapefiles overlaid with resistivity minimum zones, thermal vents, the Puna Geothermal Ventures, and Leilani flows to observe intersection areas of geothermal processes over derived DEM. | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/ERTH461maui.png" class="grid-thumb"><img src="portfolio/ERTH461maui.png" alt="Haleakala Lava Flow APE" /></a>
+					<span class="label">Haleakalā Lava Flow APE</span>
+					<h2>Haleakalā — Lava Flow APE</h2>
+					<p>Maui Volcano, Haleakalā, APE for lava flows in relation to roadway infrastructure surrounding the volcano over derived DEM. | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/ERTH461wawamalu.png" class="grid-thumb"><img src="portfolio/ERTH461wawamalu.png" alt="Sandy's Beach Burn Scar" /></a>
+					<span class="label">Sandy's Beach Burn Scar</span>
+					<h2>Wawamalu (Sandy's Beach) — 2022 Burn Scar</h2>
+					<p>Wawamalu, commonly known as Sandy's Beach, mapped perimeter of the 2022 burn scar using Garmin eTrex 32x GPS Handheld. Data imported to ArcMap to total area with 10-meter contour intervals. | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471final.png" class="grid-thumb"><img src="portfolio/GEO471final.png" alt="LiDAR Contour Intervals" /></a>
+					<span class="label">LiDAR Contour Intervals</span>
+					<h2>LiDAR-Derived Contour Intervals</h2>
+					<p>Contour intervals (0.1 meters) generated using LiDAR data to establish unobserved slopes across study area that could impact water flow. | FugroViewer</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471lab11.png" class="grid-thumb"><img src="portfolio/GEO471lab11.png" alt="Dune Migration Patterns" /></a>
+					<span class="label">Dune Migration Patterns</span>
+					<h2>Dune Migration Patterns</h2>
+					<p>Dune migration patterns mapped from LiDAR data. | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471lab10.png" class="grid-thumb"><img src="portfolio/GEO471lab10.png" alt="Population Estimation OLS" /></a>
+					<span class="label">Population Estimation OLS</span>
+					<h2>Population Estimation — OLS Regression</h2>
+					<p>Ordinary Least Square (OLS) regression using count, area, and volume of buildings. | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471lab102.png" class="grid-thumb"><img src="portfolio/GEO471lab102.png" alt="Population Estimation OLS (2)" /></a>
+					<span class="label">Population Estimation OLS (2)</span>
+					<h2>Population Estimation — OLS Regression (Detail)</h2>
+					<p>Secondary view of Ordinary Least Square (OLS) regression for population estimation compared against census data. | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471lab9.png" class="grid-thumb"><img src="portfolio/GEO471lab9.png" alt="Everglades Disturbance Mapping" /></a>
+					<span class="label">Everglades Disturbances</span>
+					<h2>Everglades National Park — Disturbance Mapping</h2>
+					<p>Disturbances in the Everglades National Park (ENP), Florida mapped from LiDAR data. | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471lab8off.png" class="grid-thumb"><img src="portfolio/GEO471lab8off.png" alt="Canopy Height Model — Leaf Off" /></a>
+					<span class="label">Canopy Height — Leaf Off</span>
+					<h2>Canopy Height Model — Leaf Off Season</h2>
+					<p>Canopy height model for forests during leaf-off season used to estimate forest inventory attributes. | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471lab8on.png" class="grid-thumb"><img src="portfolio/GEO471lab8on.png" alt="Canopy Height Model — Leaf On" /></a>
+					<span class="label">Canopy Height — Leaf On</span>
+					<h2>Canopy Height Model — Leaf On Season</h2>
+					<p>Canopy height model for forests during leaf-on season. | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471lab7.png" class="grid-thumb"><img src="portfolio/GEO471lab7.png" alt="LiDAR Mosaic Dataset" /></a>
+					<span class="label">LiDAR Mosaic Dataset</span>
+					<h2>LiDAR Mosaic Dataset Organization</h2>
+					<p>Organizing LiDAR data in a mosaic dataset. | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471lab6.png" class="grid-thumb"><img src="portfolio/GEO471lab6.png" alt="LiDAR Terrain Dataset" /></a>
+					<span class="label">LiDAR Terrain Dataset</span>
+					<h2>LiDAR Terrain Dataset Management</h2>
+					<p>Managing LiDAR data using Terrain dataset. | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471lab5.png" class="grid-thumb"><img src="portfolio/GEO471lab5.png" alt="Digital Height Model" /></a>
+					<span class="label">Digital Height Model</span>
+					<h2>Digital Height Model (DHM) — ArcScene</h2>
+					<p>Visualization of Digital Height Model (DHM) in ArcScene derived from LiDAR data. | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471lab4.png" class="grid-thumb"><img src="portfolio/GEO471lab4.png" alt="LiDAR Ground Return Reclassification" /></a>
+					<span class="label">LiDAR Ground Returns</span>
+					<h2>LiDAR Ground Return Reclassification</h2>
+					<p>Reclassification of LiDAR ground return points. | ArcMap</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471lab3.png" class="grid-thumb"><img src="portfolio/GEO471lab3.png" alt="Ground Soil Change Analysis" /></a>
+					<span class="label">Ground Soil Change Analysis</span>
+					<h2>Ground Soil Change After Digging</h2>
+					<p>Analyzing changes of ground soil after digging. | CloudCompare</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471lab2.png" class="grid-thumb"><img src="portfolio/GEO471lab2.png" alt="Tree Point Cloud" /></a>
+					<span class="label">Tree Point Cloud</span>
+					<h2>Tree Point Cloud — Return Number</h2>
+					<p>Tree point cloud rendered with Return Number attribute. | FugroViewer</p>
+				</article>
+
+				<article class="thumb">
+					<a href="portfolio/GEO471lab1.png" class="grid-thumb"><img src="portfolio/GEO471lab1.png" alt="LiDAR Class Code Editing" /></a>
+					<span class="label">LiDAR Class Code Editing</span>
+					<h2>LiDAR Class Code Editing</h2>
+					<p>Editing class codes of LiDAR data. | ArcMap</p>
+				</article>
+
+			</div>
+		</div>
+
+		<!-- Portfolio overlay styles -->
+		<style>
+			/* Shorten vertical divider line so it only spans the nav
+			   button bar itself, not the gap above it */
+			#header nav.use-middle:after {
+				top: auto !important;
+				bottom: 0 !important;
+				height: 2.75em !important;
+			}
+
+			#portfolio-grid article.thumb {
+				position: relative;
+				overflow: hidden;
+				border-radius: 4px;
+				cursor: pointer;
+				background: rgba(255,255,255,0.05);
+			}
+
+			#portfolio-grid article.thumb a.grid-thumb {
+				display: block;
+				width: 100%;
+				height: 150px;
+				overflow: hidden;
+			}
+
+			#portfolio-grid article.thumb a.grid-thumb img {
+				display: block;
+				width: 100%;
+				height: 150px;
+				object-fit: cover;
+				transition: transform 0.3s ease, filter 0.3s ease;
+			}
+
+			#portfolio-grid article.thumb:hover a.grid-thumb img {
+				transform: scale(1.08);
+				filter: brightness(0.75);
+			}
+
+			#portfolio-grid article.thumb .label {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: rgba(0,0,0,0.65);
+				color: #fff;
+				font-size: 0.72em;
+				padding: 0.4em 0.6em;
+				opacity: 0;
+				transition: opacity 0.3s ease;
+				pointer-events: none;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			#portfolio-grid article.thumb:hover .label {
+				opacity: 1;
+			}
+
+			#portfolio-grid article.thumb h2,
+			#portfolio-grid article.thumb p {
+				display: none;
+			}
+
+			#portfolio-overlay-close:hover,
+			#custom-lightbox-prev:hover,
+			#custom-lightbox-next:hover {
+				opacity: 1 !important;
+			}
+
+/* custom lightbox used instead of poptrox */
+		</style>
+
+		<!-- Portfolio overlay scripts -->
+		<script>
+			$(document).ready(function() {
+
+				// ---- Custom lightbox (replaces poptrox) ----
+			// Build the lightbox HTML and append to body
+			$('body').append(`
+				<div id="custom-lightbox" style="
+					display:none;
+					position:fixed;
+					top:0;left:0;
+					width:100vw;height:100vh;
+					background:rgba(0,0,0,0.92);
+					z-index:99999;
+					align-items:center;
+					justify-content:center;
+					flex-direction:column;
+				">
+					<div id="custom-lightbox-close" style="
+						position:fixed;
+						top:1em;right:1.5em;
+						color:#fff;font-size:2em;
+						cursor:pointer;z-index:100000;
+						line-height:1;
+					">&#x2715;</div>
+					<span id="custom-lightbox-prev" style="
+						position:fixed;left:1em;top:50%;
+						transform:translateY(-50%);
+						color:#fff;font-size:2.5em;
+						cursor:pointer;z-index:100000;
+						opacity:0.7;line-height:1;
+						user-select:none;
+					">&#8249;</span>
+					<span id="custom-lightbox-next" style="
+						position:fixed;right:1em;top:50%;
+						transform:translateY(-50%);
+						color:#fff;font-size:2.5em;
+						cursor:pointer;z-index:100000;
+						opacity:0.7;line-height:1;
+						user-select:none;
+					">&#8250;</span>
+					<img id="custom-lightbox-img" src="" style="
+						max-width:90vw;max-height:75vh;
+						object-fit:contain;
+						border-radius:4px;
+						display:block;
+					"/>
+					<div id="custom-lightbox-caption" style="
+						color:#ddd;
+						text-align:center;
+						margin-top:1em;
+						max-width:70vw;
+						font-size:0.9em;
+						line-height:1.6;
+					"></div>
+				</div>
+			`);
+
+			var lightboxItems = [];
+			var lightboxIndex = 0;
+
+			function openLightbox(index) {
+				lightboxIndex = index;
+				var item = lightboxItems[index];
+				$('#custom-lightbox-img').attr('src', item.src);
+				$('#custom-lightbox-caption').html('<strong>' + item.title + '</strong><br>' + item.desc);
+				$('#custom-lightbox').css('display', 'flex');
+			}
+
+			function closeLightbox() {
+				$('#custom-lightbox').css('display', 'none');
+				$('#custom-lightbox-img').attr('src', '');
+			}
+
+			// Open overlay when Portfolio nav is clicked
+			$('#portfolio-nav-link').on('click', function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				location.hash = '#work';
+				setTimeout(function() { $('#portfolio-overlay').fadeIn(300); }, 400);
+
+				// Build items array and attach click handlers once
+				if (!$('#portfolio-grid').data('lightbox-ready')) {
+					lightboxItems = [];
+					$('#portfolio-grid article.thumb').each(function(i) {
+						var $article = $(this);
+						var src   = $article.find('a.grid-thumb').attr('href');
+						var title = $article.find('h2').text();
+						var desc  = $article.find('p').text();
+						lightboxItems.push({ src: src, title: title, desc: desc });
+
+						$article.find('a.grid-thumb').on('click', function(e) {
+							e.preventDefault();
+							e.stopPropagation();
+							openLightbox(i);
+						});
+					});
+					$('#portfolio-grid').data('lightbox-ready', true);
+				}
+			});
+
+			// Prev / Next
+			$('#custom-lightbox-prev').on('click', function(e) {
+				e.stopPropagation();
+				lightboxIndex = (lightboxIndex - 1 + lightboxItems.length) % lightboxItems.length;
+				openLightbox(lightboxIndex);
+			});
+
+			$('#custom-lightbox-next').on('click', function(e) {
+				e.stopPropagation();
+				lightboxIndex = (lightboxIndex + 1) % lightboxItems.length;
+				openLightbox(lightboxIndex);
+			});
+
+			// Close lightbox
+			$('#custom-lightbox-close').on('click', closeLightbox);
+			$('#custom-lightbox').on('click', function(e) {
+				if ($(e.target).is('#custom-lightbox')) closeLightbox();
+			});
+
+			// Close portfolio overlay
+			$('#portfolio-overlay-close').on('click', function() {
+				$('#portfolio-overlay').fadeOut(300);
+				location.hash = '';
+			});
+
+			// Escape key
+			$(document).on('keyup', function(e) {
+				if (e.keyCode === 27) {
+					if ($('#custom-lightbox').is(':visible')) {
+						closeLightbox();
+					} else {
+						$('#portfolio-overlay').fadeOut(300);
+					}
+				}
+			});
+
+			// Arrow keys
+			$(document).on('keyup', function(e) {
+				if (!$('#custom-lightbox').is(':visible')) return;
+				if (e.keyCode === 37) $('#custom-lightbox-prev').trigger('click');
+				if (e.keyCode === 39) $('#custom-lightbox-next').trigger('click');
+			});
+
+			});
+		</script>
+
 
 	</body>
 </html>

@@ -1112,6 +1112,7 @@ input, select, textarea {
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
 		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -1272,14 +1273,16 @@ input, select, textarea {
 		}
 
 			#header > *:before {
-				content: '';
+				display: none;
+				/* use this to add a vertical separator between the logo and content when the logo is present. Adjust the height and top values as needed to align it properly. */
+				/* content: '';
 				display: block;
 				position: absolute;
 				top: calc(-3.5rem - 1px);
 				left: calc(50% - 1px);
 				width: 1px;
 				height: calc(3.5rem + 1px);
-				background: #ffffff;
+				background: #ffffff; */
 			}
 
 		#header > :first-child {
@@ -1367,7 +1370,7 @@ input, select, textarea {
 					font-size: 0.71rem;
 					border-bottom: 0;
 				}
-/* hello world, aidamana helped with this, and kira was here too  */
+/*  bdc was here  */
 
 					#header nav ul li a:hover {
 						background-color: rgba(255, 255, 255, 0.075);
@@ -1560,6 +1563,16 @@ input, select, textarea {
 				opacity: 1;
 			}
 
+			/* ---- Portfolio grid panel overrides ----
+			   Widens the panel and allows it to scroll
+			   so the photo grid has room to display.   */
+			#main article#work {
+				width: 90vw;
+				max-width: 1100px;
+				max-height: 85vh;
+				overflow-y: auto;
+			}
+
 			#main article .close {
 				display: block;
 				position: absolute;
@@ -1678,6 +1691,168 @@ input, select, textarea {
 			padding: 20px;
 			font-size: 150%;
 		  }
+/* === Fix for Multiverse gallery inside Dimension === */
+
+/* Allow scrolling for portfolio overlay */
+#work {
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* Fix inner positioning so gallery isn’t squished */
+#work .inner,
+#work #portfolio-gallery {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+/* Ensure gallery fills space inside Dimension */
+#portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+/* Optional: match Dimension theme look */
+#portfolio-gallery .thumb {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio-gallery .thumb:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+#portfolio-gallery .thumb img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#portfolio-gallery .thumb h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0.8rem 0 0.3rem 0;
+}
+
+#portfolio-gallery .thumb p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 1rem 0;
+  padding: 0 1rem;
+}
 
 
 		  
+
+/* =====================================================
+   PORTFOLIO GRID OVERRIDES
+   ===================================================== */
+
+/* When portfolio is open, switch wrapper from center to
+   flex-start so #main doesn't overflow above the viewport */
+body.is-article-visible #wrapper {
+    align-items: flex-start !important;
+    justify-content: center !important;
+    padding-top: 4em !important;
+    overflow-y: auto !important;
+    height: auto !important;
+    min-height: 100vh !important;
+}
+
+/* Only apply flex-start when work article is active */
+body.is-article-visible #main {
+    margin: 0 auto !important;
+}
+
+/* Widen work article and let it grow naturally */
+#main article#work {
+    width: 90vw !important;
+    max-width: 1100px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+/* Grid layout */
+#portfolio-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
+    gap: 0.5em !important;
+    margin-top: 1em !important;
+    width: 100% !important;
+}
+
+/* Each card */
+#portfolio-grid article.thumb {
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    display: block !important;
+}
+
+/* Anchor wrapper */
+#portfolio-grid article.thumb a.grid-thumb {
+    display: block !important;
+    width: 100% !important;
+    height: 150px !important;
+    overflow: hidden !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    position: relative !important;
+}
+
+/* Thumbnail image */
+#portfolio-grid article.thumb a.grid-thumb img {
+    display: block !important;
+    width: 100% !important;
+    height: 150px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+    border-radius: 0 !important;
+    transition: transform 0.3s ease, filter 0.3s ease !important;
+}
+
+/* Hover zoom */
+#portfolio-grid article.thumb:hover a.grid-thumb img {
+    transform: scale(1.08) !important;
+    filter: brightness(0.75) !important;
+}
+
+/* Hover label */
+#portfolio-grid article.thumb .label {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: rgba(0,0,0,0.65) !important;
+    color: #fff !important;
+    font-size: 0.72em !important;
+    padding: 0.4em 0.6em !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
+    pointer-events: none !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+#portfolio-grid article.thumb:hover .label {
+    opacity: 1 !important;
+}
+
+/* Hide captions from grid view */
+#portfolio-grid article.thumb h2,
+#portfolio-grid article.thumb p {
+    display: none !important;
+}

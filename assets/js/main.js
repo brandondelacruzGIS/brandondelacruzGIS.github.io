@@ -69,6 +69,30 @@
 		var	delay = 325,
 			locked = false;
 
+		// Portfolio layout fix.
+		// Switches wrapper from align-items:center to flex-start when
+		// the portfolio panel is open, preventing the grid from rendering
+		// above the viewport due to flexbox centering overflow.
+		function fixPortfolioLayout() {
+			if ($('#work').hasClass('active')) {
+				$wrapper.css({
+					'align-items': 'flex-start',
+					'padding-top': '4em',
+					'overflow-y': 'auto',
+					'height': 'auto',
+					'min-height': '100vh'
+				});
+			} else {
+				$wrapper.css({
+					'align-items': '',
+					'padding-top': '',
+					'overflow-y': '',
+					'height': '',
+					'min-height': ''
+				});
+			}
+		}
+
 		// Methods.
 			$main._show = function(id, initial) {
 
@@ -252,6 +276,9 @@
 
 				// Deactivate article.
 					$article.removeClass('active');
+
+				// Reset portfolio layout.
+					fixPortfolioLayout();
 
 				// Hide article.
 					setTimeout(function() {
